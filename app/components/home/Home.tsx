@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import styles from './Home.module.scss'
 import { IData } from '../../interfaces/IData'
+import AboutMe from '../about-me/AboutMe'
 
 const Home: FC<IData> = ({links, me}) => {
 
@@ -11,8 +12,7 @@ const Home: FC<IData> = ({links, me}) => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.container}>
-				Home
-				{me.siteName}
+				<AboutMe me={me}/>
 			</div>
 		</section>
 	)
