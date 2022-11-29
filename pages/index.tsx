@@ -18,8 +18,8 @@ export default function HomePage(props: IData) {
 
 export const getStaticProps = async () => {
 	try {
-		const links = await axios.get(`${API_URL}/links`).then(({data}) => data)
-		const me = await axios.get(`${API_URL}/me`).then(({data}) => data)
+		const links = await axios.get(`${process.env.API_HOST}/links`).then(({data}) => data)
+		const me = await axios.get(`${process.env.API_HOST}/me`).then(({data}) => data)
 
 
 		if (!links && !me) {
