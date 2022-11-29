@@ -21,6 +21,13 @@ export const getStaticProps = async () => {
 		const links = await axios.get(`${API_URL}/links`).then(({data}) => data)
 		const me = await axios.get(`${API_URL}/me`).then(({data}) => data)
 
+
+		if (!links && !me) {
+			return {
+				notFound: true,
+			}
+		}
+
 		return {
 			props: {
 				links: links,
