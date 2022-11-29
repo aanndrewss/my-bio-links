@@ -13,7 +13,7 @@ interface IPropsMe {
 const AboutMe: FC<IPropsMe> = ({ me }) => {
 	return <div className={styles.me}>
 		<div className={styles.imgWrapper}>
-			<Image className={styles.image} src={`${APP_URL}/images${me.avatar}`} alt={me.siteName} width={190} height={190} quality={100} />
+			<Image className={styles.image} src={`/images${me.avatar}`} alt={me.siteName} width={190} height={190} quality={100} />
 		</div>
 		<div className={styles.heading}>
 			<span>Andrew</span>
