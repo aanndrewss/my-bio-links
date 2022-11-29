@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import cn from 'classnames'
-import { useOutside } from '../../../hooks/useOutside'
+import { useOutside } from '../../../../hooks/useOutside'
 import styles from './AboutButton.module.scss'
 import parse from 'html-react-parser'
 

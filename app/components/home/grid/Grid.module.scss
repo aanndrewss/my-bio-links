@@ -1,0 +1,16 @@
+.grid {
+  @apply flex flex-wrap mt-6 mb-10 gap-[40px];
+  .item {
+    @apply relative;
+    flex: 1 1 calc((100% / 4) - 2rem);
+    .gradient {
+      @apply flex justify-center items-center h-32 border-primary border border-solid relative z-10 bg-yellow-300;
+      > img {
+        @apply w-[70px] bg-transparent;
+      }
+    }
+    .title {
+      @apply text-white opacity-80 font-medium mt-2 mb-1;
+    }
+  }
+}

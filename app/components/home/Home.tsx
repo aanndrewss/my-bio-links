@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
 import styles from './Home.module.scss'
 import { IData } from '../../interfaces/IData'
-import AboutMe from '../about-me/AboutMe'
+import AboutMe from './about-me/AboutMe'
+import Grid from './grid/Grid'
 
 const Home: FC<IData> = ({links, me}) => {
 
@@ -13,6 +14,7 @@ const Home: FC<IData> = ({links, me}) => {
 		<section className={styles.section}>
 			<div className={styles.container}>
 				<AboutMe me={me}/>
+				<Grid links={links} />
 			</div>
 		</section>
 	)

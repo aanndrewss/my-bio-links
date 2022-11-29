@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './EmailButton.module.scss'
 import Image from 'next/image'
-import { APP_URL } from '../../../utilities/constants'
+import { APP_URL } from '../../../../utilities/constants'
 
 const EmailButton = () => {
 	return (

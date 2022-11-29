@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import { IMe } from '../../interfaces/IMe'
+import { IMe } from '../../../interfaces/IMe'
 import AboutButton from './about-button/AboutButton'
 import styles from './AboutMe.module.scss'
 import Image from 'next/image'
-import { APP_URL } from '../../utilities/constants'
+import { APP_URL } from '../../../utilities/constants'
 import EmailButton from './email-button/EmailButton'
 
 interface IPropsMe {
@@ -13,7 +13,7 @@ interface IPropsMe {
 const AboutMe: FC<IPropsMe> = ({ me }) => {
 	return <div className={styles.me}>
 		<div className={styles.imgWrapper}>
-			<Image className={styles.image} src={`${APP_URL}/avatar.jpg`} alt={me.siteName} width={190} height={190} quality={100} />
+			<Image className={styles.image} src={`${APP_URL}${me.avatar}`} alt={me.siteName} width={190} height={190} quality={100} />
 		</div>
 		<div className={styles.heading}>
 			<span>Andrew</span>
