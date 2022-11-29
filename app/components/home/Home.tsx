@@ -3,6 +3,11 @@ import styles from './Home.module.scss'
 import { IData } from '../../interfaces/IData'
 
 const Home: FC<IData> = ({links, me}) => {
+
+	if (!links && me) {
+		return null
+	}
+
 	return (
 		<section className={styles.section}>
 			<div className={styles.container}>
