@@ -2,11 +2,28 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../app/components/home/Home.module.scss'
 import Home from '../app/components/home/Home'
+import axios from 'axios'
+import { API_URL } from '../app/utilities/constants'
+import { IData } from '../app/interfaces/IData'
 
-export default function HomePage() {
+export default function HomePage(props: IData) {
 	return (
 		<div>
-			<Home />
+			<Home {...props}/>
 		</div>
 	)
+}
+
+export const getStaticProps = async () => {
+
+	const links = await axios.get(`${API_URL}/links`).then(({data}) => data)
+	const me = await axios.get(`${API_URL}/me`).then(({data}) => data)
+
+	return {
+		props: {
+			links: links,
+			me: me
+		},
+		revalidate: 60
+	}
 }
