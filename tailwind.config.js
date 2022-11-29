@@ -1,5 +1,5 @@
-const primaryColor = '#DB73FF'
-const bgColor = '#202124'
+const primaryColor = '#AB47BC'
+const bgColor = '#181818'
 
 module.exports = {
   content: [
