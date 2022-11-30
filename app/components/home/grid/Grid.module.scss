@@ -1,11 +1,20 @@
+@import './styles/media';
+
 .grid {
   @apply flex flex-wrap mt-6 mb-10 gap-[40px];
+  @include media(tablet) {
+    @apply mt-4 mb-6;
+  }
   .item {
     @apply relative;
     flex: 1 1 calc((100% / 4) - 2rem);
+    @include media(tablet) {
+      flex: 1 1 calc((100% / 2) - 2rem);
+    }
 
     .gradient {
-      @apply flex justify-center rounded-[3px] items-center h-32 relative z-10 transition-all duration-[0.33s];
+      @apply flex justify-center rounded-[3px] items-center h-32 relative z-10 transition-all duration-[0.45s];
+      background-size: 200% auto;
       > img {
         @apply w-[70px] bg-transparent;
       }
@@ -24,6 +33,9 @@
     }
     .title {
       @apply text-white opacity-80 font-medium mt-2 mb-1;
+      @include media(tablet) {
+        @apply mb-0;
+      }
     }
   }
 }

@@ -1,16 +1,51 @@
+@import './styles/media';
+
 .me {
   @apply mt-40 mb-6 text-center bg-bgAbout relative;
+  @include media(laptop) {
+    @apply mt-28;
+  }
+  @include media(tablet) {
+    @apply mt-20 mb-4;
+  }
+  @include media(mobile) {
+    @apply mt-16 mb-3;
+  }
   .imgWrapper {
     @apply mb-6;
+    @include media(tablet) {
+      @apply mb-4;
+    }
+    @include media(mobile) {
+      @apply mb-2;
+    }
     .image {
       @apply rounded-full;
       margin-top: -5rem !important;
+      @include media(tablet) {
+        width: 150px !important;
+        height: 150px !important;
+      }
+      @include media(mobile) {
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: -2.5rem !important;
+      }
     }
   }
   .heading {
     @apply pb-5 text-3xl font-semibold text-white;
+    @include media(tablet) {
+      @apply text-2xl mb-4;
+    }
+    @include media(mobile) {
+      @apply mb-2 text-2xl;
+    }
     > span {
       @apply mr-2;
+      @include media(mobile) {
+        @apply mr-1;
+      }
     }
   }
 }

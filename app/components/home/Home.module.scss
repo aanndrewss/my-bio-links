@@ -1,6 +1,15 @@
+@import './styles/media';
+
 .section {
   @apply min-h-[100vh] relative overflow-hidden z-10;
   .container {
-    @apply mx-auto relative max-w-[1000px]
+    @apply mx-auto relative max-w-[1000px];
+
+    @include media(laptop) {
+      max-width: 90%;
+    }
+    @include media(mobile) {
+      max-width: 94%;
+    }
   }
 }

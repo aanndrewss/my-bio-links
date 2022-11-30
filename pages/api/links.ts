@@ -9,7 +9,7 @@ const links = [
 		title: 'GitHub',
 		isImportant: true,
 		gradient: {
-			from: '#A020F0',
+			from: '#C47EFF',
 			to: '#AB47BC'
 		}
 	},
@@ -20,7 +20,7 @@ const links = [
 		title: 'Telegram',
 		isImportant: false,
 		gradient: {
-			from: '#691883',
+			from: '#AD4BFF',
 			to: '#AB47BC'
 		}
 	},
@@ -31,7 +31,7 @@ const links = [
 		title: 'VK',
 		isImportant: false,
 		gradient: {
-			from: '#A020F0',
+			from: '#9517FF',
 			to: '#AB47BC'
 		}
 	},
