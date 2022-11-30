@@ -3,11 +3,24 @@
   .item {
     @apply relative;
     flex: 1 1 calc((100% / 4) - 2rem);
+
     .gradient {
-      @apply flex justify-center items-center h-32 border-primary border border-solid relative z-10 bg-yellow-300;
+      @apply flex justify-center rounded-[3px] items-center h-32 relative z-10 transition-all duration-[0.33s];
       > img {
         @apply w-[70px] bg-transparent;
       }
+    }
+
+    &:hover {
+      .gradient {
+        @apply  rounded-layout;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        background-position: right center;
+      }
+      > div:nth-child(3) {
+        @apply hidden;
+      }
+
     }
     .title {
       @apply text-white opacity-80 font-medium mt-2 mb-1;

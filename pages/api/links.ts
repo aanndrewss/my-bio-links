@@ -7,21 +7,33 @@ const links = [
 		iconPath: '/icons/gh-logo.svg',
 		link: 'https://github.com/aanndrewss',
 		title: 'GitHub',
-		isImportant: true
+		isImportant: true,
+		gradient: {
+			from: '#A020F0',
+			to: '#AB47BC'
+		}
 	},
 	{
 		id: 2,
 		iconPath: '/icons/tg-logo.svg',
 		link: 'https://t.me/andrxw66',
 		title: 'Telegram',
-		isImportant: false
+		isImportant: false,
+		gradient: {
+			from: '#691883',
+			to: '#AB47BC'
+		}
 	},
 	{
 		id: 3,
 		iconPath: '/icons/vk-logo.svg',
 		link: 'https://vk.com/andrxw66',
 		title: 'VK',
-		isImportant: false
+		isImportant: false,
+		gradient: {
+			from: '#A020F0',
+			to: '#AB47BC'
+		}
 	},
 ]
 
