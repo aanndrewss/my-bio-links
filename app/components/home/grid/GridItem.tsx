@@ -8,6 +8,11 @@ interface IGridProps {
 }
 
 const GridItem: FC<IGridProps> = ({ item }) => {
+
+	if (!item.gradient) {
+		return null
+	}
+
 	return (
 		<a href={item.link} rel={'noreferrer'} target={'_blank'} className={styles.item}>
 			<div className={styles.gradient}
