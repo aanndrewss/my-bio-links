@@ -4,6 +4,7 @@ import { IData } from '../../interfaces/IData'
 import AboutMe from './about-me/AboutMe'
 import Grid from './grid/Grid'
 import MetaTitle from '../ui/MetaTitle'
+import Circles from '../ui/circles/Circles'
 
 const Home: FC<IData> = ({links, me}) => {
 
@@ -18,6 +19,7 @@ const Home: FC<IData> = ({links, me}) => {
 				<AboutMe me={me}/>
 				<Grid links={links} />
 			</div>
+			<Circles/>
 		</section>
 	)
 }

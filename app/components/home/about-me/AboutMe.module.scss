@@ -1,7 +1,7 @@
 @import './styles/media';
 
 .me {
-  @apply mt-40 mb-6 text-center bg-bgAbout relative;
+  @apply mt-40 mb-6 text-center bg-bgAbout relative z-[2];
   @include media(laptop) {
     @apply mt-28;
   }

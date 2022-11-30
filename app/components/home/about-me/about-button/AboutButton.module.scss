@@ -9,7 +9,7 @@
     @apply top-1 right-1;
   }
   > button {
-    @apply cursor-pointer border-none outline-none bg-bgColor hover:bg-black transition-colors py-2 px-4 text-white;
+    @apply cursor-pointer border-none outline-none bg-bgColor hover:bg-black transition-colors duration-[0.33s] py-2 px-4 text-white;
     @include media(mobile) {
       @apply px-3 py-1.5;
     }

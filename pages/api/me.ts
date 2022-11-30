@@ -5,7 +5,7 @@ const me = {
 	siteName: 'My bio',
 	avatar: '/avatar.jpg',
 	description:
-		'<p>Hi there, I am Andrew.</p>' +
+		'<p>Hi, I am Andrew 👋.</p>' +
 		'<p>Computer science student from Kazan 🇷🇺</p>' +
 		'<p>19 y.o.</p>' +
 		'<p>I am interested in web development and would like to become a web developer.</p>'
