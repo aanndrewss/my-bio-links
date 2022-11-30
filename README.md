@@ -1,4 +1,4 @@
-<h3 align='left'>This is a [Next.js](https://nextjs.org/) project.</h3>
+This is a [Next.js](https://nextjs.org/) project.
 
 <h1 align='center'>Getting started</h1>
 
